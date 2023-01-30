@@ -5,8 +5,8 @@ pipeline {
   }
   stages {
     stage ('build docker)' {
-      steps {
-         sh "docker build . -t arshaps/cicd:$(DOCKER_TAG)"
+      steps{
+         sh "docker build . -t arshaps/cicd:${DOCKER_TAG}"
       }
     }
     
